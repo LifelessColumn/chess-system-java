@@ -185,7 +185,6 @@ public class ChessMatch {
 				capturedPiece = board.removePiece(pawnPosition);
 				capturedPieces.add(capturedPiece);
 				piecesOnTheBoard.remove(capturedPiece);
-				p.increaseMoveCount();
 			}
 		}
 		
@@ -233,7 +232,6 @@ public class ChessMatch {
 					pawnPosition = new Position(4, target.getColumn());
 				}
 				board.placePiece(pawn, pawnPosition);
-				p.decreaseMoveCount();
 			}
 		}
 	}
